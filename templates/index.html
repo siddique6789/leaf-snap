@@ -1,0 +1,49 @@
+{% extends "import.html" %} 
+{% block content %} 
+<center><br>
+
+<h3 style="font-family: myFont;">
+    <span>Welcome</span>                         
+    <span>to</span>
+    <span>our</span>
+    <span>website</span>
+    <span>where</span>
+    <span>we</span>
+    <span>provide</span>
+    <span>cutting-edge</span>
+    <span>solutions</span>
+    <span>for</span>
+    <span>identifying</span>
+    <span>and</span>
+    <span>managing</span>
+    <span>diseases</span>
+    <span>that</span>
+    <span>threaten</span>
+    <span>the</span>
+    <span>health</span>
+    <span>of</span>
+    <span>your</span>
+    <span>plants.</span>
+</h3>
+
+<br><h2 style="color: #265500;">Plant Disease Diagnosis</h2><br>
+
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+         <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+         <img id="imagePreview"  class="img-responsive" src="#" style="width:300px;height:300px;"/><br><br>
+         <div>
+            <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
+         </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</center><br><br>
+{% endblock %} 
